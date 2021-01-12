@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbb99b89-3572-43f5-9091-7cd7eccc9ec6" name="Default Changelist" comment="signup controller with hashed password.">
+    <list default="true" id="bbb99b89-3572-43f5-9091-7cd7eccc9ec6" name="Default Changelist" comment="change SignUpsController.ts to AuthController.ts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/Http/SignUpsController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/Http/AuthController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controllers/Http/AuthController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/Http/AuthController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.edge" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.edge" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/start/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/start/routes.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -14,6 +14,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1my38zzXG8LIC0gRtBSqqAQMDlJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -52,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610451848098</updated>
-      <workItem from="1610451850536" duration="8509000" />
+      <workItem from="1610451850536" duration="9112000" />
     </task>
     <task id="LOCAL-00001" summary="add user model">
       <created>1610465212308</created>
@@ -68,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610466809044</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="change SignUpsController.ts to AuthController.ts">
+      <created>1610467214273</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610467214273</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,6 +104,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add user model" />
     <MESSAGE value="signup controller with hashed password." />
-    <option name="LAST_COMMIT_MESSAGE" value="signup controller with hashed password." />
+    <MESSAGE value="change SignUpsController.ts to AuthController.ts" />
+    <option name="LAST_COMMIT_MESSAGE" value="change SignUpsController.ts to AuthController.ts" />
   </component>
 </project>

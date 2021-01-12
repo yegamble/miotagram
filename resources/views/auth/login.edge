@@ -4,7 +4,34 @@
 </head>
 
 <body>
-Login
+<section>
+  <form action="/login" method="post">
+
+    <div>
+      <label for="email"></label>
+      <input type="email" name="email" id="email"/>
+
+      @if(flashMessages.has('errors.email'))
+      <small>{{ flashMessages.get('errors.email')}}</small>
+      @endif
+
+    </div>
+
+    <div>
+      <label for="password"></label>
+      <input type="password" name="password" id="password"/>
+
+      @if(flashMessages.has('errors.password'))
+      <small>{{ flashMessages.get('errors.password')}}</small>
+      @endif
+    </div>
+
+    <div>
+      <input type="submit" value="Login"></input>
+    </div>
+
+  </form>
+</section>
 </body>
 
 </html>
