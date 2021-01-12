@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbb99b89-3572-43f5-9091-7cd7eccc9ec6" name="Default Changelist" comment="add validation to login form.">
-      <change afterPath="$PROJECT_DIR$/app/Middleware/Auth.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Middleware/SilentAuth.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/auth.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contracts/auth.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.adonisrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.adonisrc.json" afterDir="false" />
+    <list default="true" id="bbb99b89-3572-43f5-9091-7cd7eccc9ec6" name="Default Changelist" comment="add auth middleware">
+      <change afterPath="$PROJECT_DIR$/resources/views/profile.edge" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Controllers/Http/AuthController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/Http/AuthController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.edge" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.edge" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/kernel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/start/kernel.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/start/routes.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610451848098</updated>
-      <workItem from="1610451850536" duration="10546000" />
+      <workItem from="1610451850536" duration="12062000" />
     </task>
     <task id="LOCAL-00001" summary="add user model">
       <created>1610465212308</created>
@@ -96,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610467791793</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add auth middleware">
+      <created>1610469222507</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610469222507</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +122,7 @@
     <MESSAGE value="signup controller with hashed password." />
     <MESSAGE value="change SignUpsController.ts to AuthController.ts" />
     <MESSAGE value="add validation to login form." />
-    <option name="LAST_COMMIT_MESSAGE" value="add validation to login form." />
+    <MESSAGE value="add auth middleware" />
+    <option name="LAST_COMMIT_MESSAGE" value="add auth middleware" />
   </component>
 </project>

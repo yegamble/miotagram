@@ -38,7 +38,7 @@ export default class AuthController {
     return response.redirect('/')
   }
 
-  public async login({ request }: HttpContextContract){
+  public async login({ request, auth, response }: HttpContextContract){
       const req = await request.validate({
         schema:schema.create({
           email: schema.string(),
@@ -53,13 +53,18 @@ export default class AuthController {
         }
       })
 
-     let user = await User.findBy('email',req.email)
+    const email = req.email
+    const password = req.password
 
-    if(user == null){
-       user = await User.findByOrFail("username",req.email)
-    }
+    await auth.attempt(email, password)
 
-    return user
+    return response.redirect('/profile')
+  }
+
+  public async logout({auth, response}: HttpContextContract){
+    await auth.logout()
+    return response.redirect('/')
+
   }
 
 }

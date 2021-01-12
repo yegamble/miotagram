@@ -25,5 +25,9 @@ Route.on('/').render('welcome')
 Route.on('/login').render('auth/login')
 Route.post('/login','AuthController.login')
 
+Route.post('/logout','AuthController.logout')
+
 Route.on('/signup').render('auth/signup')
 Route.post('/signup','AuthController.signup')
+
+Route.on('/profile').render('profile').middleware('auth')
