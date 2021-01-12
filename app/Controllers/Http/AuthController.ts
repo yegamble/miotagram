@@ -1,6 +1,7 @@
 import {rules, schema} from "@ioc:Adonis/Core/Validator";
 import User from "App/Models/User";
 import {HttpContextContract} from "@ioc:Adonis/Core/HttpContext";
+import {ifError} from "assert";
 
 
 export default class AuthController {
@@ -24,7 +25,7 @@ export default class AuthController {
         'password.confirmed': 'Passwords do not match',
         'email.unique': 'Email already exists'
       }
-    })
+    }).catch(ifError)
 
     const user = new User()
     user.name = validated.name
@@ -40,21 +41,25 @@ export default class AuthController {
   public async login({ request }: HttpContextContract){
       const req = await request.validate({
         schema:schema.create({
-          email: schema.string({},[
-            rules.email()
-          ]),
+          email: schema.string(),
           password: schema.string({},[
             rules.minLength(8)
           ])
         }),
         messages: {
-          'email.required': 'Email is required',
+          'email.required': 'Email or Username is required',
           'password.required': 'Password is required',
           'password.minLength': 'Password must be at least 8 characters',
         }
       })
 
-    return 'sucess'
+     let user = await User.findBy('email',req.email)
+
+    if(user == null){
+       user = await User.findByOrFail("username",req.email)
+    }
+
+    return user
   }
 
 }
