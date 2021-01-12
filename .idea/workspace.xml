@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbb99b89-3572-43f5-9091-7cd7eccc9ec6" name="Default Changelist" comment="add user model">
+    <list default="true" id="bbb99b89-3572-43f5-9091-7cd7eccc9ec6" name="Default Changelist" comment="signup controller with hashed password.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/Http/SignUpsController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/Http/SignUpsController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controllers/Http/SignUpsController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/Http/AuthController.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/start/routes.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +52,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610451848098</updated>
-      <workItem from="1610451850536" duration="7982000" />
+      <workItem from="1610451850536" duration="8509000" />
     </task>
     <task id="LOCAL-00001" summary="add user model">
       <created>1610465212308</created>
@@ -60,7 +61,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610465212308</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="signup controller with hashed password.">
+      <created>1610466809043</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610466809044</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,6 +88,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add user model" />
-    <option name="LAST_COMMIT_MESSAGE" value="add user model" />
+    <MESSAGE value="signup controller with hashed password." />
+    <option name="LAST_COMMIT_MESSAGE" value="signup controller with hashed password." />
   </component>
 </project>

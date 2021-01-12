@@ -2,7 +2,7 @@ import {rules, schema} from "@ioc:Adonis/Core/Validator";
 import User from "App/Models/User";
 
 
-export default class SignUpsController {
+export default class AuthController {
 
   public async index({request, response}){
     const validated = await request.validate({
