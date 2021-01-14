@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbb99b89-3572-43f5-9091-7cd7eccc9ec6" name="Default Changelist" comment="logout endpoint.">
-      <change afterPath="$PROJECT_DIR$/.idea/iotagram.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/iotagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/iotagram.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app.edge" afterDir="false" />
+    <list default="true" id="bbb99b89-3572-43f5-9091-7cd7eccc9ec6" name="Default Changelist" comment="add username already exists check and add iotagram logos.">
+      <change afterPath="$PROJECT_DIR$/database/migrations/1610606795019_store_iota_private_subkeys.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/Http/AuthController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/Http/AuthController.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/auth/signup.edge" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/signup.edge" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profile.edge" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile.edge" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.edge" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.edge" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1610451848098</updated>
       <workItem from="1610451850536" duration="16025000" />
-      <workItem from="1610604176797" duration="2068000" />
+      <workItem from="1610604176797" duration="4784000" />
     </task>
     <task id="LOCAL-00001" summary="add user model">
       <created>1610465212308</created>
@@ -123,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610470784801</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add username already exists check and add iotagram logos.">
+      <created>1610606363146</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1610606363146</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +150,7 @@
     <MESSAGE value="add validation to login form." />
     <MESSAGE value="add auth middleware" />
     <MESSAGE value="logout endpoint." />
-    <option name="LAST_COMMIT_MESSAGE" value="logout endpoint." />
+    <MESSAGE value="add username already exists check and add iotagram logos." />
+    <option name="LAST_COMMIT_MESSAGE" value="add username already exists check and add iotagram logos." />
   </component>
 </project>
