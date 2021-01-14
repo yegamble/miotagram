@@ -1,52 +1,79 @@
-<html>
-<head>
+@layout('layouts/app')
 
-</head>
+@section('content')
+<section class="flex justify-center py-10">
+    <div class="" style="width: 20rem">
+      <article class="border p-12 bg-white">
+<!--        <h1>mIOTAgram</h1>-->
 
-<body>
-  <section>
-    <form action="/signup" method="post">
+        <img src="/public/images/iotagram.png" alt="Iotagram Logo" srcset="/public/images/iotagram.svg"/>
 
-      <div>
-        <label for="name"></label>
-        <input type="text" name="name" id="name"/>
+        <h2>Sign up to see photos videos from your friends</h2>
 
-        @if(flashMessages.has('errors.name'))
-        <small>{{ flashMessages.get('errors.name')}}</small>
-        @endif
+        <hr></hr>
 
-      </div>
+        <form action="/signup" method="post">
 
-      <div>
-        <label for="email"></label>
-        <input type="email" name="email" id="email"/>
+          <div>
+            <label for="name"></label>
+            <input class="w-full bg-gray-200 rounded px-2 py-1 border my-1 placeholder-gray-600"
+                   type="text" name="name" id="name" placeholder="Full Name"/>
 
-        @if(flashMessages.has('errors.email'))
-        <small>{{ flashMessages.get('errors.email')}}</small>
-        @endif
+            @if(flashMessages.has('errors.name'))
+            <small>{{ flashMessages.get('errors.name')}}</small>
+            @endif
 
-      </div>
+          </div>
 
-      <div>
-        <label for="password"></label>
-        <input type="password" name="password" id="password"/>
+          <div>
+            <label for="email"></label>
+            <input class="w-full bg-gray-200 rounded px-2 py-1 border my-1 placeholder-gray-600"
+                   type="email" name="email" id="email" placeholder="Mobile Number or Email"/>
 
-        @if(flashMessages.has('errors.password'))
-        <small>{{ flashMessages.get('errors.password')}}</small>
-        @endif
-      </div>
+            @if(flashMessages.has('errors.email'))
+            <small>{{ flashMessages.get('errors.email')}}</small>
+            @endif
 
-      <div>
-        <label for="password_confirmation"></label>
-        <input type="password" name="password_confirmation" id="password_confirmation"/>
-      </div>
+          </div>
 
-      <div>
-        <input type="submit" value="Sign Up"></input>
-      </div>
+                    <div>
+                      <label for="username"></label>
+                      <input class="w-full bg-gray-200 rounded px-2 py-1 border my-1 placeholder-gray-600"
+                             type="username" name="username" id="username" placeholder="Username"/>
 
-    </form>
+                      @if(flashMessages.has('errors.username'))
+                      <small>{{ flashMessages.get('errors.username')}}</small>
+                      @endif
+
+          </div>
+
+          <div>
+            <label for="password"></label>
+            <input class="w-full bg-gray-200 rounded px-2 py-1 border my-1 placeholder-gray-600"
+                   type="password" name="password" id="password" placeholder="Password"/>
+
+            @if(flashMessages.has('errors.password'))
+            <small>{{ flashMessages.get('errors.password')}}</small>
+            @endif
+          </div>
+
+          <div>
+            <label for="password_confirmation"></label>
+            <input class="w-full bg-gray-200 rounded px-2 py-1 border my-1 placeholder-gray-600"
+                   type="password" name="password_confirmation" id="password_confirmation" placeholder="Confirm Password"/>
+          </div>
+
+          <div>
+            <input class="w-full rounded px-2 py-1 border mt-5 text-white" style="background-color: rgba(var(--d69,0,149,246),1)" type="submit" value="Sign Up"></input>
+          </div>
+
+        </form>
+      </article>
+
+      <article class="border mt-3 text-center py-8 bg-white">
+        Have an account? <a href="/login" class="text-blue-500">Log in</a>
+      </article>
+    </div>
   </section>
-</body>
 
-</html>
+  @endsection

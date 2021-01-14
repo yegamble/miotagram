@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbb99b89-3572-43f5-9091-7cd7eccc9ec6" name="Default Changelist" comment="add auth middleware">
-      <change afterPath="$PROJECT_DIR$/resources/views/profile.edge" afterDir="false" />
+    <list default="true" id="bbb99b89-3572-43f5-9091-7cd7eccc9ec6" name="Default Changelist" comment="logout endpoint.">
+      <change afterPath="$PROJECT_DIR$/.idea/iotagram.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/iotagram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/iotagram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app.edge" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Controllers/Http/AuthController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/Http/AuthController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/signup.edge" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/signup.edge" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile.edge" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile.edge" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.edge" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.edge" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start/kernel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/start/kernel.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/start/routes.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,8 +44,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -46,11 +57,16 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/resources/views/auth" />
     </key>
   </component>
@@ -62,7 +78,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610451848098</updated>
-      <workItem from="1610451850536" duration="12062000" />
+      <workItem from="1610451850536" duration="16025000" />
+      <workItem from="1610604176797" duration="2068000" />
     </task>
     <task id="LOCAL-00001" summary="add user model">
       <created>1610465212308</created>
@@ -99,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610469222507</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="logout endpoint.">
+      <created>1610470784800</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610470784801</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +139,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -123,6 +148,7 @@
     <MESSAGE value="change SignUpsController.ts to AuthController.ts" />
     <MESSAGE value="add validation to login form." />
     <MESSAGE value="add auth middleware" />
-    <option name="LAST_COMMIT_MESSAGE" value="add auth middleware" />
+    <MESSAGE value="logout endpoint." />
+    <option name="LAST_COMMIT_MESSAGE" value="logout endpoint." />
   </component>
 </project>

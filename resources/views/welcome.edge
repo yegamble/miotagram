@@ -1,5 +1,6 @@
-<html>
-  <body>
+@layout('layouts/app')
+
+@section('content')
 
   @if(auth.isAuthenticated)
 
@@ -11,5 +12,7 @@
     <a href="/login">Login</a>
 
   @endif
-  </body>
-</html>
+
+@endsection
+
+

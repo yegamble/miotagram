@@ -29,5 +29,19 @@ export default class User extends BaseModel {
     if(user.$dirty.password){
       user.password = await Hash.make(user.password)
     }
+
+  }
+
+  public static isUsernameUnique(username:string){
+
+    if(User.findBy('username',username) != null){
+      return false
+    } else {
+      return true
+    }
+  }
+
+  public static getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
   }
 }
