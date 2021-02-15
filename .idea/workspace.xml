@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbb99b89-3572-43f5-9091-7cd7eccc9ec6" name="Default Changelist" comment="iota node in env and testing with account creation.">
+    <list default="true" id="bbb99b89-3572-43f5-9091-7cd7eccc9ec6" name="Default Changelist" comment="add newsfeed controller">
+      <change afterPath="$PROJECT_DIR$/resources/views/posts/newsfeed.edge" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controllers/Http/NewsfeedsController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/Http/PostController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/start/routes.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +66,19 @@
       <recent name="$PROJECT_DIR$/resources/views/auth" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -76,7 +92,7 @@
       <workItem from="1611673289700" duration="3032000" />
       <workItem from="1613266548104" duration="235000" />
       <workItem from="1613275915062" duration="44000" />
-      <workItem from="1613334613117" duration="1027000" />
+      <workItem from="1613334613117" duration="5291000" />
     </task>
     <task id="LOCAL-00001" summary="add user model">
       <created>1610465212308</created>
@@ -134,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610609160741</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add newsfeed controller">
+      <created>1613342195818</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1613342195818</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +185,7 @@
     <MESSAGE value="logout endpoint." />
     <MESSAGE value="add username already exists check and add iotagram logos." />
     <MESSAGE value="iota node in env and testing with account creation." />
-    <option name="LAST_COMMIT_MESSAGE" value="iota node in env and testing with account creation." />
+    <MESSAGE value="add newsfeed controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="add newsfeed controller" />
   </component>
 </project>

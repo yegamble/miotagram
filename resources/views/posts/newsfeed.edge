@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+<!--  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>-->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+  <title>mIOTAGram</title>
+</head>
+<body>
+
+      <form action="{{ route('PostController.store') }}" enctype="multipart/form-data" method="POST">
+        <div>
+          <p>
+            <label for="title"> Post title </label>
+          </p>
+          <input type="text" name="title" />
+        </div>
+
+        <div>
+          <p>
+            <label for="body"> Post body </label>
+          </p>
+          <textarea name="body" cols="30" rows="10"></textarea>
+        </div>
+
+            <div>
+                      <p>
+                        <label for="image"> Upload Image </label>
+                      </p>
+                      <input type="file" name="image">
+                    </div>
+
+        <div>
+          <button type="submit"> Create Post </button>
+        </div>
+
+      </form>
+
+
+
+
+    @each(post in posts)
+      <article>
+        <h2>
+          <a href="/"> {{ post.title }} </a>
+        </h2>
+      </article>
+    @endeach
+
+</body>
+</html>
